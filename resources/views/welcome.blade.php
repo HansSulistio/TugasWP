@@ -87,6 +87,7 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel Kentut asd
+                    zxcxc
                 </div>
 
                 <div class="links">
