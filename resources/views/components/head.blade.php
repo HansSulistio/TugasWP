@@ -2,9 +2,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<link href = {{ asset("bootstrap/css/bootstrap.min.css") }} rel="stylesheet" />
+<link href = {{ asset("bootstrap/css/bootstrap-grid.min.css") }} rel="stylesheet" />
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
-<link rel="stylesheet" type="text/css" href="../../../css/style.css">
+<link href = {{ asset("css/style.css") }} rel="stylesheet" />
+<script type="text/javascript" src={{asset("js/jquery-3.3.1.min.js")}}></script>
+
