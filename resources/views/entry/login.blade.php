@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="navbarr">
-		asdasds
+		asda
 	</div>
 </body>
 </html>
