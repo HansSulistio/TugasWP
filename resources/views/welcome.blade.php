@@ -13,7 +13,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+
         <!-- Styles -->
         <style>
             html, body {
@@ -87,6 +87,8 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel Kentut asd dsa
+                    Laravel Kentut asd
+                    zxcxc
                 </div>
 
                 <div class="links">
