@@ -87,7 +87,21 @@
             <div class="content">
                 <div class="title m-b-md">
                     Laravel Kentut asd dsa
-                    Laravel Kentut asd
+                    Laravel Kentut asdxzczxczxczxczxczxczxczxczxczxczxczxczxczxc
+
+
+
+                    asdasd
+
+                    xzc
+                    11
+                    22
+                    3
+                    3
+
+                    4
+                    5
+                    
                     zxcxc sddssddsss
                 </div>
 
