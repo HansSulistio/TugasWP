@@ -6,7 +6,9 @@ button{
 
 }
 
-
+input,label{
+	margin: 5px 0;
+}
 
 /*nav*/
 .nav-component{
