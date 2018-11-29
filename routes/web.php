@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::get('login',function(){
 	return view('guest.login');
 });
-Route::Get('register',function(){
+Route::get('register',function(){
 	return view('guest.register');
+});
+Route::get('home',function(){
+	return view('member.add-forum');
 });

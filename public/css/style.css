@@ -6,9 +6,14 @@ button{
 
 }
 
-input,label{
+input,label,select,textarea{
 	margin: 5px 0;
 }
+
+.center{
+	text-align: center;
+}
+
 
 /*nav*/
 .nav-component{
@@ -36,6 +41,28 @@ input,label{
 
 
 
+/*home*/
+
+.search-box p,.search-box h4{
+	margin-bottom: 0;
+}
+
+.btn-add-forum{
+	position: fixed;
+	bottom: 60px;
+	right: 60px;
+	border: none;
+	font-size: 3em;
+	width: 50px;
+	height: 80px;
+}
+
+/*add forum*/
+.custom-select{
+	border: none;
+	border-radius: 0;
+	
+}
 
 /*footer*/
 .footer p{

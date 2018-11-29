@@ -3,7 +3,7 @@
 @section('title','register')
 
 @section('content')
-	<div class="container jumbotron bg-secondary login text-light">
+	<div class="container jumbotron bg-secondary register text-light">
 		<h4 class="ml-5">Register</h4>
 		<form method="post" action="#" class="container row">
 			<label class="col-lg-3 text-right">Name</label>
