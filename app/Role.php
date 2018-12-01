@@ -4,8 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Guest extends Model
+class Role extends Model
 {
     //
-
 }
