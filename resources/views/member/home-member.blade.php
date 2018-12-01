@@ -10,6 +10,7 @@
 		</div>
 	
 		{{-- per items --}}
+		
 		<div class="row jumbotron" style="padding: 0; padding: 10px;">
 			
 				<h4 class="col-lg-11">Header</h4>
@@ -18,6 +19,7 @@
 				<p class="col-lg-12">Posted at:</p>
 				<div class="col-lg-12 bg-light rounded" style="padding: 10px;">Discuss issues related to launching rocket</div>
 		</div>
+		
 		<btn class="btn btn-add-forum bg-secondary text-light">
 				+
 		</btn>

@@ -9,8 +9,8 @@
 		</div>
 	</div>
 	<div class="row wrapper">
-		<div class="col-lg-2">DivForum</div>
-		<button class="btn offset-lg-8 col-lg-1">Login</button>
-		<button class="btn col-lg-1 " >Register</button>
+		<a class="col-lg-2 text-light" href={{url('/')}}>DivForum</a>
+		<a class="btn offset-lg-8 col-lg-1 text-light" href={{url('login')}}>Login</a>
+		<a class="btn col-lg-1 text-light" href={{url('register')}}>Register</a>
 	</div>
 </div>

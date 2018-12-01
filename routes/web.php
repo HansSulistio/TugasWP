@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('guest.home-guest');
 });
 
 Route::get('login',function(){
@@ -22,5 +22,8 @@ Route::get('register',function(){
 	return view('guest.register');
 });
 Route::get('home',function(){
-	return view('member.add-forum');
+	return view('member.home-forum');
+});
+Route::get('thread',function(){
+	return view('member.forum-thread');
 });

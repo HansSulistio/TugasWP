@@ -10,6 +10,10 @@ input,label,select,textarea{
 	margin: 5px 0;
 }
 
+a{
+	text-decoration: none;
+}
+
 .center{
 	text-align: center;
 }
