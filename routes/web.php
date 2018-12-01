@@ -27,3 +27,6 @@ Route::get('home',function(){
 Route::get('thread',function(){
 	return view('member.forum-thread');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
