@@ -12,22 +12,20 @@
 */
 
 Route::get('/', function () {
-    return view('guest.home-guest');
+    return view('home');
 });
 
-Route::get('login',function(){
-	return view('guest.login');
+Route::get('/login',function(){
+	return view('login');
 });
 Route::get('register',function(){
-	return view('guest.register');
+	return view('register');
 });
 Route::get('home',function(){
-	return view('member.home-forum');
+	return view('home-forum');
 });
 Route::get('thread',function(){
-	return view('member.forum-thread');
+	return view('forum-thread');
 });
-
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

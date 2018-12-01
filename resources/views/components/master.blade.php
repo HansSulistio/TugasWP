@@ -7,9 +7,8 @@
 </head>
 <body>
 	@include('components.nav')
-
-	@yield('content')
-
-	@include('components.footer')
+	<div class="container px-5 mb-5">
+		@yield('content')
+	</div>
 </body>
 </html>
