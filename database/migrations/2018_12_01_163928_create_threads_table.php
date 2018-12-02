@@ -18,7 +18,7 @@ class CreateThreadsTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->integer('status');
-            $table->integer('category_id')
+            $table->integer('category_id');
             $table->timestamps();
         });
     }
