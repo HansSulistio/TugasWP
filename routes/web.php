@@ -27,9 +27,7 @@ Route::get('home',function(){
 Route::get('thread',function(){
 	return view('forum-thread');
 });
-Route::get('thread/add',function(){
-	return view('forum-add');
-});
 
-Route::get('/thread/add', 'ThreadController@addView');
+Route::get('/thread/add', 'ThreadController@create');
+Route::post('/thread/doAdd', 'ThreadController@store');
 Route::get('/home', 'HomeController@index')->name('home');
