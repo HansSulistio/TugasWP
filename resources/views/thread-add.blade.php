@@ -8,7 +8,7 @@
 
         <div class="card-body">
             <form method="POST" action="/thread/store">
-                @csrf
+                {{ csrf_token() }}
 
                 <div class="form-group row">
                     <label for="name" class="col-sm-4 col-form-label text-md-right font-weight-bold">Name</label>
@@ -37,13 +37,13 @@
                     </div>
                 </div>
 
+				<input type="text" name="status" class="d-none" value="1">
 
                 <div class="form-group row">
                     <div class="col-md-8 offset-md-4">
                         <button type="submit" class="btn btn-primary py-2 px-4">
                             Add Thread
                         </button>
-
                     </div>
                 </div>
             </form>
