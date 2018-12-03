@@ -9,7 +9,7 @@
         <div class="card-body">
             <form method="POST" action="{{-- {{ route('login') }} --}}">
                 @csrf
-	
+
 				<div class="form-group row">
                     <label class="col-sm-4 col-form-label text-md-right font-weight-bold">
                     	<span class="text-danger mr-1">*</span>Name
@@ -39,7 +39,7 @@
                         <input id="password" type="password" class="form-control" name="password">
                     </div>
                 </div>
-				
+
 				<div class="form-group row">
                     <label class="col-md-4 col-form-label text-md-right font-weight-bold">
                     	<span class="text-danger mr-1">*</span>Confirm Password
@@ -49,7 +49,7 @@
                         <input id="confirmpassword" type="password" class="form-control" name="confirmpassword">
                     </div>
                 </div>
-				
+
 				<div class="form-group row">
                     <label class="col-sm-4 col-form-label text-md-right font-weight-bold">
                     	<span class="text-danger mr-1">*</span>Phone
@@ -59,7 +59,7 @@
                         <input id="phone" type="text" class="form-control" name="phone">
                     </div>
                 </div>
-				
+
 				<div class="form-group row">
                     <label class="col-sm-4 col-form-label text-md-right font-weight-bold">
                     	Address
@@ -69,7 +69,7 @@
                         <textarea class="form-control" rows="2" id="address" name="address"></textarea>
                     </div>
                 </div>
-				
+
 				<div class="form-group row">
                     <label class="col-sm-4 col-form-label text-md-right font-weight-bold">
                     	<span class="text-danger mr-1">*</span>Birthday
@@ -79,7 +79,7 @@
                         <input id="birthday" type="text" class="form-control" name="birthday" placeholder="dd/mm/yyyy" >
                     </div>
                 </div>
-				
+
 				<div class="form-group row">
                     <label class="col-sm-4 col-form-label text-md-right font-weight-bold">
                     	<span class="text-danger mr-1">*</span>Gender
@@ -92,7 +92,7 @@
 						</div>
                     </div>
                 </div>
-				
+
 				<div class="form-group row">
                     <label class="col-sm-4 col-form-label text-md-right font-weight-bold">
                     	<span class="text-danger mr-1">*</span>Phone

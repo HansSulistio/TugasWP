@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/login',function(){
+Route::get('login',function(){
 	return view('login');
 });
 Route::get('register',function(){
@@ -28,6 +28,6 @@ Route::get('thread',function(){
 	return view('forum-thread');
 });
 
-Route::get('/thread/add', 'ThreadController@create');
-Route::post('/thread/doAdd', 'ThreadController@store');
+Route::get('/thread/create', 'ThreadController@create');
+Route::post('/thread/store', 'ThreadController@store');
 Route::get('/home', 'HomeController@index')->name('home');

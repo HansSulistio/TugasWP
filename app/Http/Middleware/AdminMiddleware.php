@@ -15,6 +15,8 @@ class AdminMiddleware
      */
     public function handle($request, Closure $next)
     {
+        // $user = Auth:user();
+
         return $next($request);
     }
 }
