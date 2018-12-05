@@ -21,4 +21,10 @@ class ThreadController extends Controller
 
         return redirect('/');;
     }
+
+    public function show(){
+
+        return view('thread-view');
+    }
+
 }

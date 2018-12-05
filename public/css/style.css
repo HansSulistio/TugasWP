@@ -1,74 +1,74 @@
 /*initial*/
 
-button{
-	background-color: transparent;
-	color: white;
-
+button {
+  background-color: transparent;
+  color: white;
+}
+* {
+  font-family: helvetica;
 }
 
-input,label,select,textarea{
-	margin: 5px 0;
+input,
+label,
+select,
+textarea {
+  margin: 5px 0;
 }
 
-a{
-	text-decoration: none;
+a {
+  text-decoration: none;
 }
 
-.center{
-	text-align: center;
+.center {
+  text-align: center;
 }
-
 
 /*nav*/
-.nav-component{
-	color: white;
-	padding: 10px 0;
-	margin-bottom: 20px;
+.nav-component {
+  color: white;
+  padding: 10px 0;
+  margin-bottom: 20px;
 }
-.nav-component .wrapper{
-	margin: 0 auto;
-	max-width: 80%;
-}
-
-.btn{
-	padding: 3px;
-	border: 1px solid white;
-	
-}
-.btn:hover{
-	background-color: rgb(10,10,10);
-	border: 1px solid transparent;
+.nav-component .wrapper {
+  margin: 0 auto;
+  max-width: 80%;
 }
 
+.btn {
+  padding: 3px;
+  border: 1px solid white;
+}
+.btn:hover {
+  background-color: rgb(10, 10, 10);
+  border: 1px solid transparent;
+}
 
 /*login*/
 
-
-
 /*home*/
 
-.search-box p,.search-box h4{
-	margin-bottom: 0;
+.search-box p,
+.search-box h4 {
+  margin-bottom: 0;
 }
 
-.btn-add-forum{
-	position: fixed;
-	bottom: 60px;
-	right: 60px;
-	border: none;
-	font-size: 3em;
-	width: 50px;
-	height: 80px;
+.btn-add-forum {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  border: none;
+  font-size: 3em;
+  width: 50px;
+  height: 80px;
 }
 
 /*add forum*/
-.custom-select{
-	border: none;
-	border-radius: 0;
-	
+.custom-select {
+  border: none;
+  border-radius: 0;
 }
 
 /*footer*/
-.footer p{
-	padding: 20px 0;
+.footer p {
+  padding: 20px 0;
 }

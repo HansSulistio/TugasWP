@@ -1,31 +1,52 @@
 @extends("components.master")
 
-@section('title','Add Forum')
+@section('title','Update Forum')
 
 @section('content')
-	<div class="container jumbotron bg-secondary add-forum text-light">
-		<h4 class="ml-5">Forum Data</h4>
-		<form method="post" action="#" class="container row">
-			<label class="col-lg-3 text-right">Name</label>
-				<input type="text" name="name" class="col-lg-9 ">
+	<div class="card">
+        <div class="card-header font-weight-bold">Forum Add</div>
 
-			<label class="col-lg-3 text-right">Category</label>
-				
-				  <select class="custom-select col-lg-9">
-				    <option value="0">Choose Category</option>
-				    <option value="1">Audi</option>
-				    <option value="2">BMW</option>
-				    <option value="3">Citroen</option>
-				    
-				    
-				  </select>
-				
+        <div class="card-body">
+            <form method="POST" action="/thread/store">
+                @csrf
 
-			<label class="col-lg-3 text-right">Description</label>
-				<textarea name="description" class="col-lg-9 "></textarea>
+                <div class="form-group row">
+                    <label for="name" class="col-sm-4 col-form-label text-md-right font-weight-bold">Name</label>
 
-			<button class="btn col-lg-1 offset-lg-3 text-light">Update</button>
-		</form>
+                    <div class="col-md-6">
+                        <input id="name" type="name" name="name" class="form-control">
+                    </div>
+                </div>
 
-	</div>
+				<div class="form-group row">
+					<label for="category" class="col-md-4 col-form-label text-md-right font-weight-bold">Category</label>
+					<div class="col-md-6">
+						<select class="form-control" name="category">
+							@foreach ($categories as $category)
+							<option value="{{ $category->id }}"> {{ $category->description }}</option>
+							@endforeach
+						</select>
+					</div>
+				</div>
+
+                <div class="form-group row">
+                    <label for="description" class="col-md-4 col-form-label text-md-right font-weight-bold">Description</label>
+
+                    <div class="col-md-6">
+						<textarea class="form-control" rows="2" id="description" name="description"></textarea>
+                    </div>
+                </div>
+
+				<input type="text" name="status" class="d-none" value="1">
+
+                <div class="form-group row">
+                    <div class="col-md-8 offset-md-4">
+                        <button type="submit" class="btn btn-primary py-2 px-4">
+                            Update Thread
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 @stop

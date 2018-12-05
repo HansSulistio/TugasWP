@@ -31,3 +31,4 @@ Route::get('thread',function(){
 Route::get('/thread/create', 'ThreadController@create');
 Route::post('/thread/store', 'ThreadController@store');
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/show','ThreadController@show');
