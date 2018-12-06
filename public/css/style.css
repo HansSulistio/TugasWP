@@ -23,6 +23,13 @@ a {
   text-align: center;
 }
 
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
 /*nav*/
 .nav-component {
   color: white;
@@ -66,6 +73,12 @@ a {
 .custom-select {
   border: none;
   border-radius: 0;
+}
+
+/* profile*/
+.profile-edit-btn {
+  right: 0;
+  z-index: 100;
 }
 
 /*footer*/

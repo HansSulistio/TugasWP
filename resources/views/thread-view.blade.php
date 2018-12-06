@@ -11,7 +11,7 @@
 			<div class="row " style="padding: 0; padding: 10px;">
 
 					<h4 class="col-lg-11 mb-0">Header</h4>
-					<span class="col-lg-1 bg-success text-light rounded text-lg-center ">Status</span>
+					<span class="col-lg-1 badge badge-success text-light rounded text-lg-center ">Status</span>
 					<p class="col-lg-12 mb-0">Category:</p>
 					<p class="col-lg-12 mb-0">Owner:</p>
 					<p class="col-lg-12 ">Posted at:</p>
@@ -47,6 +47,12 @@
 			<div class="container row">
 				<p class="col-lg-12 mb-0">Content</p>
 				<textarea name="name" class="col-lg-12 rounded border-dark"></textarea>
+				<div class="col-lg-12 ">
+					<button type="submit" class="btn btn-primary py-2 px-4">
+						Post
+					</button>
+
+				</div>
 			</div>
 		</div>
 	</div>
@@ -58,6 +64,12 @@
 			<div class="container row">
 				<p class="col-lg-12 mb-0">Content</p>
 				<textarea name="name" class="col-lg-12 rounded border-dark"></textarea>
+				<div class="col-lg-12 ">
+					<button type="submit" class="btn btn-primary py-2 px-4">
+						Edit
+					</button>
+
+				</div>
 			</div>
 		</div>
 	</div>

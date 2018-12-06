@@ -27,6 +27,9 @@ Route::get('home',function(){
 Route::get('thread',function(){
 	return view('forum-thread');
 });
+Route::get('/profile',function(){
+    return view('member.profile-other');
+});
 
 Route::get('/thread/create', 'ThreadController@create');
 Route::post('/thread/store', 'ThreadController@store');
