@@ -7,7 +7,7 @@
         <div class="card-header font-weight-bold">Register</div>
 
         <div class="card-body">
-            <form method="POST" action="{{-- {{ route('login') }} --}}">
+            <form method="POST" action="{{ url('/register') }}">
                 @csrf
 
 				<div class="form-group row">
@@ -76,7 +76,7 @@
                 	</label>
 
                     <div class="col-md-6">
-                        <input id="birthday" type="text" class="form-control" name="birthday" placeholder="dd/mm/yyyy" >
+                        <input id="birthday" type="text" class="form-control" name="birthday" placeholder="yyyy-mm-dd" >
                     </div>
                 </div>
 
@@ -95,12 +95,12 @@
 
 				<div class="form-group row">
                     <label class="col-sm-4 col-form-label text-md-right font-weight-bold">
-                    	<span class="text-danger mr-1">*</span>Phone
+                    	<span class="text-danger mr-1">*</span>Profile
                 	</label>
 
                     <div class="col-md-6">
                         <div class="custom-file">
-						    <input type="file" class="custom-file-input" id="photo">
+						    <input type="file" class="custom-file-input" name="photo" id="photo">
 						    <label class="custom-file-label" for="photo">Choose file</label>
 						</div>
                     </div>

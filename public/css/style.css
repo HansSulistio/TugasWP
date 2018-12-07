@@ -30,6 +30,11 @@ a {
   position: absolute;
 }
 
+.absolute-right-top {
+  right: 20px;
+  z-index: 100;
+}
+
 /*nav*/
 .nav-component {
   color: white;
@@ -41,10 +46,6 @@ a {
   max-width: 80%;
 }
 
-.btn {
-  padding: 3px;
-  border: 1px solid white;
-}
 .btn:hover {
   background-color: rgb(10, 10, 10);
   border: 1px solid transparent;

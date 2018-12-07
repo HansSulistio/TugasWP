@@ -21,14 +21,18 @@ Route::get('login',function(){
 Route::get('register',function(){
 	return view('register');
 });
+Route::post('register','UserController@store');
 Route::get('home',function(){
 	return view('home-forum');
 });
 Route::get('thread',function(){
 	return view('forum-thread');
 });
-Route::get('/profile',function(){
+Route::get('profile',function(){
     return view('member.profile-other');
+});
+Route::get('inbox',function(){
+    return view('member.inbox');
 });
 
 Route::get('/thread/create', 'ThreadController@create');
