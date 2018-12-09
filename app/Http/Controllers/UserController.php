@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\User;
-
+use Carbon\Carbon;
 class UserController extends Controller
 {
     public function create()
@@ -22,7 +22,9 @@ class UserController extends Controller
         $user->phone = $request->get('phone');
         $user->address = $request->get('address');
         $user->profile_picture = '1';
-        $user->birth_date = $request->get('birthday');
+        $temp = Carbon::parse($request->get('birthday'));
+        $temp = $temp->format('Y-m-d');
+        $user->birth_date = $temp;
         $user->role_id = 1;
         $user->gender_id = 1;
         $user->save();
