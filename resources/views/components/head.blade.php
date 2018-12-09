@@ -8,12 +8,3 @@
 
 <link href = {{ asset("css/style.css") }} rel="stylesheet" />
 <script type="text/javascript" src={{asset("js/jquery-3.3.1.min.js")}}></script>
-<style type="text/css">
-	html {
-	  height: 100%;
-	}
-	body {
-	  min-height: 100%;
-	  background-color: #f2f2f2;
-	}
-</style>

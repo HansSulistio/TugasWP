@@ -34,6 +34,9 @@ Route::get('profile',function(){
 Route::get('inbox',function(){
     return view('member.inbox');
 });
+Route::get('myForum',function(){
+    return view('member.thread-myForum');
+});
 
 Route::get('/thread/create', 'ThreadController@create');
 Route::post('/thread/store', 'ThreadController@store');

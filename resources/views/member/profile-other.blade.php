@@ -12,10 +12,10 @@
                 <div class="row relative">
                     <div class="form-group row">
 
-                            <button type="submit" class="btn btn-danger py-2 px-4 absolute offset-lg-10 col-lg-1">
+                            <button type="submit" class="btn btn-danger absolute offset-lg-10 col-lg-1">
                                 -
                             </button>
-                            <button type="submit" class="btn btn-success py-2 px-4 absolute offset-lg-11 col-lg-1">
+                            <button type="submit" class="btn btn-success absolute offset-lg-11 col-lg-1">
                                 +
                             </button>
 
