@@ -37,6 +37,9 @@ Route::get('inbox',function(){
 Route::get('myForum',function(){
     return view('member.thread-myForum');
 });
+Route::get('msuser',function(){
+    return view('admin.master-user');
+});
 
 Route::get('/thread/create', 'ThreadController@create');
 Route::post('/thread/store', 'ThreadController@store');
