@@ -20,7 +20,7 @@ Route::get('login',function(){
 });
 Route::get('register',function(){
 	return view('register');
-});
+})->middleware('auth.guess');
 Route::post('register','UserController@store');
 Route::get('home',function(){
 	return view('home-forum');
