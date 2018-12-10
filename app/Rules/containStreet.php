@@ -25,7 +25,7 @@ class containStreet implements Rule
      */
     public function passes($attribute, $value)
     {
-        $mustBeStreet = substr($value, -5);
+        $mustBeStreet = substr($value, -6);
         return $mustBeStreet == 'Street';
     }
 

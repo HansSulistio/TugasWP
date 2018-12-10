@@ -51,7 +51,7 @@ class UserController extends Controller
         $user->password = $request->get('password');
         $user->phone = $request->get('phone');
         $user->address = $request->get('address');
-        $user->profile_picture = 'images/'.$fileName;
+        $user->profile_picture = $fileName;
         $temp = Carbon::parse($request->get('birthday'));
         $temp = $temp->format('Y-m-d');
         $user->birth_date = $temp;

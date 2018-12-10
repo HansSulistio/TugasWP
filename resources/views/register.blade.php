@@ -9,7 +9,7 @@
         </div>
 
         <div class="card-body">
-            <form method="POST" action="{{ url('/register') }}">
+            <form method="POST" action="{{ url('/register') }}" enctype="multipart/form-data">
                 @csrf
 
 				<div class="form-group row">
@@ -68,7 +68,7 @@
                 	</label>
 
                     <div class="col-md-6">
-                        <textarea class="form-control" rows="2" id="address" name="address" value="{{ old('Address') }}"></textarea>
+                        <textarea class="form-control" rows="2" id="address" name="address">{{ old('address') }}</textarea>
                     </div>
                 </div>
 
