@@ -4,7 +4,9 @@
 
 @section('content')
 	<div class="card">
-        <div class="card-header font-weight-bold">Register</div>
+        <div class="card-header font-weight-bold">Register 
+            <span class="text-danger"> [ {{$errors->first()}} ]</span>
+        </div>
 
         <div class="card-body">
             <form method="POST" action="{{ url('/register') }}">
@@ -16,7 +18,7 @@
                 	</label>
 
                     <div class="col-md-6">
-                        <input id="name" type="text" class="form-control" name="name">
+                        <input id="name" type="text" class="form-control" name="name" value="{{ old('name') }}">
                     </div>
                 </div>
 
@@ -26,7 +28,7 @@
                 	</label>
 
                     <div class="col-md-6">
-                        <input id="email" type="email" class="form-control" name="email">
+                        <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}">
                     </div>
                 </div>
 
@@ -46,7 +48,7 @@
                     </label>
 
                     <div class="col-md-6">
-                        <input id="confirmpassword" type="password" class="form-control" name="confirmpassword">
+                        <input id="confirmpassword" type="password" class="form-control" name="confirm_password">
                     </div>
                 </div>
 
@@ -56,7 +58,7 @@
                 	</label>
 
                     <div class="col-md-6">
-                        <input id="phone" type="text" class="form-control" name="phone">
+                        <input id="phone" type="text" class="form-control" name="phone" value="{{ old('phone') }}">
                     </div>
                 </div>
 
@@ -66,7 +68,7 @@
                 	</label>
 
                     <div class="col-md-6">
-                        <textarea class="form-control" rows="2" id="address" name="address"></textarea>
+                        <textarea class="form-control" rows="2" id="address" name="address" value="{{ old('Address') }}"></textarea>
                     </div>
                 </div>
 
@@ -76,7 +78,7 @@
                 	</label>
 
                     <div class="col-md-6">
-                        <input id="birthday" type="text" class="form-control" name="birthday" placeholder="yyyy-mm-dd" >
+                        <input id="birthday" type="text" class="form-control" name="birthday" placeholder="yyyy-mm-dd" value="{{ old('birthday') }}">
                     </div>
                 </div>
 
@@ -87,8 +89,8 @@
 
                     <div class="col-md-6">
                         <div class="radio py-2">
-						  	<label class="mr-3"><input type="radio" name="gender" class="mr-2">Male</label>
-						  	<label><input type="radio" name="gender" class="mr-2">Female</label>
+						  	<label class="mr-3"><input type="radio" name="gender" class="mr-2" value="1">Male</label>
+						  	<label><input type="radio" name="gender" class="mr-2" value="2">Female</label>
 						</div>
                     </div>
                 </div>
@@ -109,7 +111,7 @@
                 <div class="form-group row">
                     <div class="col-md-6 offset-md-4">
                         <label>
-                            <input type="checkbox" name="remember" id="remember" class="mr-1">Remember Me
+                            <input type="checkbox" name="agree" id="agree" class="mr-1">By registering to this website. I agree term and condition
                         </label>
                     </div>
                 </div>
@@ -124,5 +126,10 @@
             </form>
         </div>
     </div>
-
+    <script>
+        $('#photo').on('change',function(){
+            var fileName = ($(this).val()).split("\\");
+            $(this).next('.custom-file-label').html(fileName[fileName.length-1]);
+        })
+    </script>
 @stop

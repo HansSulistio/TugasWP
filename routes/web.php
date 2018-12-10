@@ -11,20 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('login',function(){
-	return view('login');
-});
+// ROUTE GUESS
+Route::get('', 'HomeController@index');
+Route::get('login','LoginController@index');
 Route::post('login','LoginController@login');
 Route::get('register','UserController@create')->middleware('auth.guess'); // page ini berarti cuman bisa di akses guess
 Route::post('register','UserController@store');
 
-Route::get('home',function(){
-	return view('home-forum');
-});
+
+// ROUTE MEMBER
+
+
+
+// ROUTE ADMIN
 Route::get('thread',function(){
 	return view('forum-thread');
 });

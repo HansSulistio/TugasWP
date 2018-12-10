@@ -14,5 +14,12 @@ class LoginController extends Controller
         session(['name' => 'Andi']);
         session(['role' => 'Admin']);
         session(['user_id' => '1']);
+
+        
+    }
+
+    public function index()
+    {
+    	return view('login');
     }
 }
